@@ -1,4 +1,29 @@
-.header__logo{
+.header{
+    display: flex;
+    align-items: center;
+    background-color:$primary_color;
+}
+.logo_img{
     width:100px;
-    background-color: $primary_color;
+}
+
+.list__link{
+    display: inline;
+}
+.list__link a{
+    text-decoration:none;
+    color: $primary_font_color;
+}
+
+.header__usuario{
+    width:60px;
+    height:60px;
+    background-color: white;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.usuario__img{
+    transform-origin: center;
+    width:33px;
 }

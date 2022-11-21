@@ -1,6 +1,32 @@
-.header__logo {
-  width: 100px;
+.header {
   background-color: #3961ff;
+  align-items: center;
+  display: flex;
+}
+
+.logo_img {
+  width: 100px;
+}
+
+.list__link {
+  display: inline;
+}
+
+.list__link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__usuario {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.usuario__img {
+  transform-origin: center;
+  width: 33px;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
