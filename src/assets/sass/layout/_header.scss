@@ -1,29 +1,93 @@
 .header{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color:$primary_color;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.logo_img{
+.logo__link{
+    position: relative;
+    top: -20px;
+}
+.logo__img{
     width:100px;
 }
-
+.logo__name{
+    position: relative;
+    top: -30px;
+}
+.menu__list{
+    width:400px;
+    display:flex;
+    justify-content: space-between;
+}
 .list__link{
     display: inline;
 }
 .list__link a{
     text-decoration:none;
-    color: $primary_font_color;
+    color: $white;
 }
 
-.header__usuario{
-    width:60px;
-    height:60px;
+//HEADER__RIGHT
+.header__right{
+    flex:2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+//ICONO USUARIO
+.header__user{
+    display: inline-block;
+    padding-left:50px;
+}
+.user__div{
+    position: relative;
+    width:43px;
+    height:43px;
     background-color: white;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-.usuario__img{
+.user__img{
     transform-origin: center;
-    width:33px;
+    position: absolute;
+    top: 11.16px;
+    left: 11.16px;
+}
+
+//BARRA DE BÚSQUEDA
+
+.header__search {
+    position: relative;
+    width: 271px;
+    display: inline-block;
+    
+}
+.search__input {
+    box-sizing: border-box;
+    color: $black;
+    width: 100%;
+    border: none;
+    border-radius:20px;
+    height: auto;
+    padding: 5px;
+}
+.search__icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    left: unset;
+    right: 12px;
+}
+.search__input:focus{
+    outline:none;
 }
