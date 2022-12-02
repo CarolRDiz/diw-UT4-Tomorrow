@@ -1,0 +1,34 @@
+$color__primary: #3961FF;
+$color__primary--variant: #7E8EFF;
+$color__secondary: #FFD639;
+$color__secondary--variant: #FAA62B;
+$color__text: #000000;
+$color__icon: #000000;
+$color__background-icon:#ffffff;
+// Colors dark
+$color__primary--dark: #000103;
+$color__secondary--dark: #515052;
+$color__text--dark: #ffffff;
+$color__icon--dark:#ffffff;
+$color__background-icon--dark:#000000;
+
+// Theme light
+.theme{
+    --color__primary: #{$color__primary};
+    --color__secondary: #{$color__secondary};
+    --color__text: #{$color__text};
+    --color__text--dark: #{$color__text--dark};
+    --color__icon: #{$color__icon};
+    --color__icon--dark: #{$color__icon--dark};
+    --color__background-icon:#{$color__background-icon};
+    // Theme dark
+    &--dark{
+        --color__primary: #{$color__primary--dark};
+        --color__secondary: #{$color__secondary--dark};
+        --color__text: #{$color__text--dark};
+        --color__text--dark: #{$color__text};
+        --color__icon: #{$color__icon--dark};
+        --color__background-icon:#{$color__background-icon--dark};
+    }
+}
+    

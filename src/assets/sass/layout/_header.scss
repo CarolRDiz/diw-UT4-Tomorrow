@@ -1,14 +1,25 @@
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:$primary_color;
+    background-color:var(--color__primary);
     padding-left: 50px;
     padding-right: 50px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1f;
+    grid-template-rows:1fr;
+    grid-template-areas: "logo enlaces iconos";
+
+    @include mobile {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: "logo iconos"
+                            "enlaces enlaces";
+    }
 }
+//LOGO
 .logo__link{
     position: relative;
     top: -20px;
+    grid-area: logo;
 }
 .logo__img{
     width:100px;
@@ -17,41 +28,49 @@
     position: relative;
     top: -30px;
 }
+//MENU
+.header__menu{
+    width: 350px;
+    grid-area: enlaces;
+    align-self: center;
+
+}
 .menu__list{
-    width:400px;
     display:flex;
     justify-content: space-between;
 }
-.list__link{
+.menu__li{
     display: inline;
 }
-.list__link a{
+.menu__link{
     text-decoration:none;
-    color: $white;
+    color: var(--color__text--dark);
 }
 
 //HEADER__RIGHT
 .header__right{
-    flex:2;
+    flex:1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    grid-area: iconos;
+
+    
 }
 
 //ICONO USUARIO
 .header__user{
-    display: inline-block;
-    padding-left:50px;
-}
-.user__div{
+    display: block;
     position: relative;
     width:43px;
     height:43px;
-    background-color: white;
+    background-color: var(--color__background-icon);
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+    margin-left: 45px;
 }
+
 .user__img{
     transform-origin: center;
     position: absolute;
@@ -69,15 +88,19 @@
 }
 .search__input {
     box-sizing: border-box;
-    color: $black;
+    color: var(--color__icon);
     width: 100%;
     border: none;
     border-radius:20px;
     height: auto;
     padding: 5px;
+    padding-left: 10px;
+    @include mobile{
+        display:none;
+    }
 }
 .search__icon {
-    color: #191919;
+    fill: var(--color__icon);
     position: absolute;
     width: 20px;
     height: 20px;
@@ -87,6 +110,9 @@
 
     left: unset;
     right: 12px;
+    @include mobile{
+        fill:var(--color__icon--dark);
+    }
 }
 .search__input:focus{
     outline:none;
