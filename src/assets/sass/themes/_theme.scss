@@ -15,7 +15,9 @@ $color__background-icon--dark:#000000;
 // Theme light
 .theme{
     --color__primary: #{$color__primary};
+    --color__primary--variant:#{$color__primary--variant};
     --color__secondary: #{$color__secondary};
+    --color__secondary--variant:#{$color__secondary--variant};
     --color__text: #{$color__text};
     --color__text--dark: #{$color__text--dark};
     --color__icon: #{$color__icon};

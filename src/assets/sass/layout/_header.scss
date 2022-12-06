@@ -1,10 +1,9 @@
 .header{
     background-color:var(--color__primary);
-    padding-left: 50px;
-    padding-right: 50px;
+    padding:20px $padding-horizontal;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1f;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:1fr;
     grid-template-areas: "logo enlaces iconos";
 
@@ -15,25 +14,11 @@
                             "enlaces enlaces";
     }
 }
-//LOGO
-.logo__link{
-    position: relative;
-    top: -20px;
-    grid-area: logo;
-}
-.logo__img{
-    width:100px;
-}
-.logo__name{
-    position: relative;
-    top: -30px;
-}
 //MENU
 .header__menu{
     width: 350px;
     grid-area: enlaces;
     align-self: center;
-
 }
 .menu__list{
     display:flex;
@@ -49,13 +34,11 @@
 
 //HEADER__RIGHT
 .header__right{
-    flex:1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     grid-area: iconos;
-
-    
+    margin-left:40px;
 }
 
 //ICONO USUARIO
@@ -82,20 +65,21 @@
 
 .header__search {
     position: relative;
-    width: 271px;
     display: inline-block;
-    
+    @include tablet{
+        position:static;
+    }
 }
 .search__input {
     box-sizing: border-box;
     color: var(--color__icon);
-    width: 100%;
+    width: 271px;
     border: none;
     border-radius:20px;
     height: auto;
     padding: 5px;
     padding-left: 10px;
-    @include mobile{
+    @include tablet{
         display:none;
     }
 }
@@ -110,8 +94,10 @@
 
     left: unset;
     right: 12px;
-    @include mobile{
+    @include tablet{
         fill:var(--color__icon--dark);
+        position:static;
+        transform: unset;
     }
 }
 .search__input:focus{
