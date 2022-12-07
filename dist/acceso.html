@@ -30,13 +30,29 @@
             </a>
         </div>
     </header>
-    <main class="access__main">
-        <section class="main__">
-            <div>
-
+    <main class="main__access">
+        <section class="access__section">
+            <div class="access__selection">
+                <ul class="selection__ul">
+                    <li class="selection__option selection__option--active">
+                        <span>Iniciar sesión</span>
+                    </li>
+                    <li class="selection__option">
+                        <a class="option__link" href="#">Registrarse</a>
+                    </li>
+                </ul>
             </div>
-            <form action="">
-            
+            <form class="access__form" action="">
+                <label class="form__label">
+                    Correo Electrónico:
+                    <input class="form__input" type="text" placeholder="Introduce tu correo electrónico">
+                </label>
+                <label class="form__label">
+                    Contraseña:
+                    <input class="form__input" type="password" placeholder="Introduce tu contraseña">
+                </label>
+                <p><a class="form__remember" href="#">He olvidado mi contraseña</a></p>
+                <label><input type="checkbox">Recordar mis datos</label>
             </form>
         </section>
     </main>

@@ -1,0 +1,21 @@
+.form__input{
+    background-color: var(--color__background-icon);
+    border: 2px solid var(--color__secondary--variant);
+    border-radius: 10px;
+    width: 325px;
+    height: 56px;
+    display: block;
+    color: var(--color__text);
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.form__input:focus{
+    outline: none;
+}
+
+.form__remember{
+    color: var(--color__text);
+    text-decoration: underline;
+    font-weight: 500;
+}

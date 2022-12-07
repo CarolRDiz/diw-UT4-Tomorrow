@@ -1,7 +1,33 @@
-.access__main{
+.main__access{
     background-image: url(../img/fondo_registro.svg);
     height: 100vh;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
+}
+.selection__ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 35px;
+}
+.selection__option{
+    display: inline-block;
+    width: 145px;
+    height: 58px;
+    color: var(--color__text);
+    background-color: var(--color__gray-2);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option__link{
+    text-decoration: none;
+    color:var(--color__text);
+}
+.selection__option--active{
+    background-color: var(--color__background-icon);
+    border: 2px solid var(--color__secondary--variant)
 }

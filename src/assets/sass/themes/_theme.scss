@@ -5,6 +5,7 @@ $color__secondary--variant: #FAA62B;
 $color__text: #000000;
 $color__icon: #000000;
 $color__background-icon:#ffffff;
+$color__gray-2: #7B7B7B; 
 // Colors dark
 $color__primary--dark: #000103;
 $color__secondary--dark: #515052;
@@ -18,6 +19,7 @@ $color__background-icon--dark:#000000;
     --color__primary--variant:#{$color__primary--variant};
     --color__secondary: #{$color__secondary};
     --color__secondary--variant:#{$color__secondary--variant};
+    --color__gray-2: #{$color__gray-2}; 
     --color__text: #{$color__text};
     --color__text--dark: #{$color__text--dark};
     --color__icon: #{$color__icon};
