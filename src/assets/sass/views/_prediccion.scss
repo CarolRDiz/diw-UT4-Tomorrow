@@ -1,0 +1,87 @@
+.main__city{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 20px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.city__block-1{
+    display: inline-block;
+}
+.city__info{
+    padding: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    border: 2px solid var(--color__secondary);
+    border-radius: 10;
+}
+.info__wind{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background-color: var(--color__gray-4);
+    padding: 10px;
+    border-radius: 10;
+}
+.table__selection{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    column-gap: 35px;
+    display: flex;
+    align-items: center;
+    width:80%;
+    margin-bottom: 50px;
+}
+.table__grid{
+    flex: grid;
+}
+.table__column{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width:fit-content;
+    row-gap: 20px;
+}
+.table__temperature-limits{
+    width: 80px;
+    height: 60px;
+}
+.temperature-limits__span{
+    display: block;
+}
+.table__weather{
+    width: 97px;
+    height: 81px;
+}
+.weather__img{
+    width: 50px;
+    height: 50px;
+}
+.table__cell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+.table__wheather-day{
+    display: flex;
+    align-items: flex-end;
+}
+.table__dawn{
+    width: 50px;
+    height: 50px;
+}
+.table__nightfall{
+    width: 50px;
+    height: 50px;
+}
+.table__wind{
+    width: 51px;
+    height: 51px;
+}

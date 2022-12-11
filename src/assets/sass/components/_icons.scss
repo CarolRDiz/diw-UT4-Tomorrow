@@ -1,0 +1,61 @@
+.icon--wind{
+    background-image: url("/src/assets/img/icon_wind_arrow.svg");
+}
+.icon--temperature--max{
+    background-image: url("/src/assets/img/icon_temperature.svg");
+}
+.icon--temperature--min{
+    background-image: url("/src/assets/img/icon_temperature.svg");
+    transform: rotate(180deg);
+}
+.icon--dawn{
+    background-image: url("/src/assets/img/icon_dawn.svg");
+}
+.icon--nightfall{
+    background-image: url("/src/assets/img/icon_nightfall.svg");
+}
+i{
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+.icon--small{
+    width: 16px;
+    height: 16px;
+}
+.icon--medium{
+    width: 25px;
+    height: 25px;
+}
+.icon--large{
+    width: 50px;
+    height: 50px;
+}
+.icon--large{
+
+}
+
+.direction{
+    &--up{
+        transform: rotate(-90deg);
+    }
+    &--left{
+        transform: rotate(180deg);  
+    }
+    &--down{
+        transform: rotate(90deg);
+    }
+    &--right-up{
+        transform: rotate(-45deg);
+    }
+    &--left-up{
+        transform: rotate(-135deg);
+    }
+    &--left-down{
+        transform: rotate(135deg);
+    }
+    &--right-down{
+        transform: rotate(45deg);
+    }
+}

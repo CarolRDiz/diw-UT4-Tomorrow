@@ -1,0 +1,19 @@
+.main__news-section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.topic__news{
+    display: flex;
+    column-gap: 40px;
+    width: 1000px;
+    justify-content: space-between;
+}
+.news-section__selection{
+    display: flex;
+    column-gap: 40px;
+    padding: 0;
+}
+.topic__title{
+    margin-bottom: 20px;
+}

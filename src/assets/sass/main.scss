@@ -1,0 +1,26 @@
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+
+@import 'base/reset';
+@import 'base/typo';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+
+@import 'components/logo';
+@import 'components/icons';
+@import 'components/buttons';
+
+@import 'views/contacto';
+@import 'views/listado';
+@import 'views/registro';
+@import 'views/index';
+@import 'views/prediccion';
+@import 'views/acceso';
+@import 'views/noticias';
+
+@import 'themes/theme';

@@ -1,0 +1,49 @@
+.main__access{
+    background-image: url(../img/fondo_acceso.svg);
+    padding: 50px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    @include mobile{
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(126,142,255,1) 100%);
+    }
+}
+
+.access__form-container{
+    width:430px;
+    padding: 50px;
+    background-color: var(--color__background-opacity);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 31px;
+    justify-content: center;
+    @include mobile{
+        width:90vw;
+        padding:5%;
+    }
+}
+.selection__ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    column-gap: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+}
+.access__form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+.form__remember{
+    align-self: flex-end;
+}
+.access__section{
+    display: flex;
+    justify-content: center;
+}
