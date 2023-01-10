@@ -1,0 +1,9 @@
+<svg width="0" height="0" viewBox="0 0 400 300">
+  <defs>
+    <mask id="circle">
+      <rect fill="#000000" x="0" y="0" width="400" height="300"></rect>
+      <circle fill="#FFFFFF" cx="150" cy="150" r="100"></circle>
+      <circle fill="#FFFFFF" cx="50" cy="50" r="150"></circle>
+    </mask>
+  </defs>
+</svg>
